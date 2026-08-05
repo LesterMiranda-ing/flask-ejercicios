@@ -1,0 +1,160 @@
+/* Configuración básica de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Tarjeta contenedora */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Organización del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Estilo de los campos de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdbcbc;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+/* Cambia el color del borde al hacer clic en un campo */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Estilo del botón de envío */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto hover al pasar el cursor sobre el botón */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ARCHIVO SALUDO.HTML */
+
+
+/* Estilos específicos para la tarjeta de saludo */
+.container-saludo {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Ícono de confirmación */
+.icon-check {
+    width: 60px;
+    height: 60px;
+    background-color: #28a745;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+/* Destacar el nombre del usuario */
+.nombre-destacado {
+    color: #007bff;
+    text-transform: capitalize;
+}
+
+/* Texto explicativo */
+.container-saludo p {
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+/* Botón estilizado para regresar */
+.btn-volver {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Animación suave de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

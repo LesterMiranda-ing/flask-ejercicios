@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Hola {{ nombre }}!</title>
+    <!-- Vinculamos la hoja de estilos -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+
+    <div class="container container-saludo">
+        <div class="icon-check">✓</div>
+        <h1>¡Hola, <span class="nombre-destacado">{{ nombre }}</span>!</h1>
+        <p>Gracias por ponerte en contacto con nosotros. Hemos recibido tu mensaje correctamente y te responderemos a la brevedad.</p>
+        
+        <!-- Botón para regresar al formulario -->
+        <a href="/contacto" class="btn-volver">Volver al Formulario</a>
+    </div>
+
+</body>
+</html>
